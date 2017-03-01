@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kz.ogfox.monitorfx.controllers.MainController">
+   <children>
+      <LineChart fx:id="lineChart" layoutX="14.0" layoutY="35.0" prefHeight="287.0" prefWidth="562.0">
+        <xAxis>
+          <CategoryAxis label="sec" side="BOTTOM" fx:id="xAxis" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="GB" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <LineChart fx:id="pingChart" layoutX="14.0" layoutY="348.0" prefHeight="308.0" prefWidth="512.0">
+        <xAxis>
+          <CategoryAxis label="packeges" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="ms" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <TextArea fx:id="textArea" editable="false" layoutX="788.0" layoutY="39.0" prefHeight="662.0" prefWidth="477.0" />
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="1280.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="RAM">
+            <items>
+              <MenuItem fx:id="updateRam" mnemonicParsing="false" onAction="#testRam" text="Update data" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ping">
+            <items>
+              <MenuItem fx:id="startTest" mnemonicParsing="false" onAction="#testPing" text="Start ping test" />
+                  <MenuItem fx:id="clearData" mnemonicParsing="false" onAction="#testPing" text="Clear ping data" />
+                  <MenuItem fx:id="stopTest" mnemonicParsing="false" onAction="#testPing" text="Stop ping test" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="HDD and Network">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#showData" text="Show data" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="About">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#about" text="About" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="controlsfx-8.40">
+    <CLASSES>
+      <root url="file://$USER_HOME$/Desktop/java lib/controlsfx-8.40.12" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/Desktop/java lib/controlsfx-8.40.12" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/Desktop/java lib/controlsfx-8.40.12" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Desktop/java lib/controlsfx-8.40.12" recursive="false" type="SOURCES" />
+  </library>
+</component>
